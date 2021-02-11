@@ -4,4 +4,5 @@ while(num>0):
     mult*=num
     num-=1
 print(mult)
+print(mult)
 
