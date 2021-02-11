@@ -14,11 +14,4 @@ while True:
         break
     except:
         print("enter only number")
-    try:
-        n=int(input("enter the number of row: "))
-        m=int(input("enter the number of coloumns: "))
-        array=[ [input("enter the value: ") for i in range(m)] for j in range(n)]
-        print("2D array:", array)
-        break
-    except:
-        print("enter only number")
+
