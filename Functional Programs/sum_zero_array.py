@@ -15,6 +15,7 @@ while True:
             for j in range(i+1,n-1):
                 for k in range(j+1,n):
                     if(array[i]+array[j]+array[k]==0):
+                        print(array[i],array[j],array[k])
                         count+=1
         print("triplet sums are: ", count)
         break
