@@ -2,8 +2,8 @@
  @Author: Ritika Patidar
  @Date: 2021-02-12 21:28:29
  @Last Modified by: Ritika Patidar
- @Last Modified time: 2021-02-12 21:28:29 
- @Title : Gambler problem
+ @Last Modified time: 2021-02-12 21:30:29 
+ @Title : Stop watch problem
 '''
 def stop_watch():
     try:
