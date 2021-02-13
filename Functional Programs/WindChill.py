@@ -2,7 +2,7 @@
  @Author: Ritika Patidar
  @Date: 2021-02-11 18:10:30
  @Last Modified by: Ritika Patidar
- @Last Modified time: 2021-02-11 18:10:30 
+ @Last Modified time: 2021-02-13 11:10:30 
  @Title : Wind chill Problem
 '''
 def wind_chill():
@@ -14,7 +14,8 @@ def wind_chill():
             print("wind chill: ", w)
         else:
             wind_chill()
-    except:
+    except ValueError:
+        print("enter number only try again!!")
         wind_chill()
 wind_chill()
 
