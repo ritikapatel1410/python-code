@@ -9,7 +9,6 @@ import random
 while True:
     try:
         win=0
-        loss=0
         experiment=0
         stake=int(input("enter the stake value: "))
         goal=int(input("enter the goal: "))
@@ -23,11 +22,10 @@ while True:
                 stake-=1
             experiment+=1
         win_percentage=(win/experiment)*100
-        print("number of wins: ", win)
         print("number of win percentage: ", win_percentage)
         print("number of loss percentage: ", 100-win_percentage)
         break
-    except:
+    except ValueError:
         print("enter number only")
 
 
