@@ -5,23 +5,19 @@
  @Last Modified time: 2021-02-12 21:30:29 
  @Title : Stop watch problem
 '''
+import time
+
 def stop_watch():
     try:
-        start_time=input("enter start time in HH:MM:SS format: ")
-        end_time=input("enter end time in HH:MM:SS format: ")
-        start_time_split=list(map(int,start_time.split(":")))
-        end_time_split=list(map(int,end_time.split(":")))
-        start_time_second=start_time_split[0]*3600+start_time_split[1]*60+start_time_split[2]
-        end_time_second=end_time_split[0]*3600+end_time_split[1]*60+end_time_split[2]
-        if(end_time_second>start_time_second and (start_time_split[0]<24 and start_time_split[0]>=0)and(start_time_split[1]<60 and start_time_split[1]>=0)and(start_time_split[2]<60 and start_time_split[2]>=0)and(end_time_split[0]<24 and end_time_split[0]>=0)and(end_time_split[1]<60 and end_time_split[1]>=0)and(end_time_split[2]<60 and end_time_split[2]>=0)):
-            elapse_time_second=end_time_second-start_time_second
-            elapse_time_hour=(elapse_time_second/3600)
-            elapse_time_minute=(elapse_time_second%3600)/60
-            elapse_time_second=(elapse_time_second%3600)%60
-            print("elapse_time %02d:%02d:%02d" %(int(elapse_time_hour),int(elapse_time_minute),int(elapse_time_second)))
-        else:
-            print("expected future time greater then present time and 24 hours format try again")
-            stop_watch()
+        start_time=input("press enter for start stop watch: ")
+        start_time=time.time()
+        end_time=input("press enter for stop stop watch: ")
+        end_time=time.time()
+        elasped_time=end_time-start_time
+        hours = elasped_time//3600
+        minutes = (elasped_time%3600)//60
+        seconds = ((elasped_time%3600)%60)
+        print('%02d:%02d:%02d' %(hours,minutes,seconds))        
     except Exception as error:
         print("{0} error occured expected HH:MM:SS time format try again".format(error))
         stop_watch()
