@@ -7,7 +7,7 @@
 '''
 while True:
     try:
-        year=int(input("enter the year: "))
+        year=int(input("enter the year in yyyy format: "))
         if(len(str(year))==4):
             if(((year%4 == 0) and (year%100 !=0)) or (year%400 == 0)):
                 print(year, "is leap year")
@@ -17,5 +17,6 @@ while True:
                 break
         else:
             print("invalid year")
-    except:
+    except ValueError:
+
         print("invalid format of year try again!!")
