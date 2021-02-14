@@ -5,6 +5,8 @@
  @Last Modified time: 2021-02-14 15:15:29 
  @Title : Cross game problem
  '''
+#importing module 
+import logging 
 import random
 
 #function for create board
@@ -59,7 +61,8 @@ def move(player,board):
             print("user move {0}".format(counter))
             print(board)
             counter+=1
-        except ValueError:
+        except ValueError as error:
+            logger.error(error) 
             print("give only int value")
             move(player,board)
 
@@ -137,9 +140,20 @@ def play_game():
                 if(winner!=0):
                     break
         print(result(winner))
-    except Exception as error:
+        logger.debug("code working as expected")
+    except ValueError as error:
+        logger.error(error) 
         print("give input integer only")
         play_game()
 
 if __name__ == "__main__":
+   #Create and configure logger 
+    logging.basicConfig(filename="logger.log", 
+                        format='%(asctime)s %(message)s', 
+                        filemode='w') 
+    
+    #Creating an object 
+    logger=logging.getLogger()
+    #Setting the threshold of logger to DEBUG
+    logger.setLevel(logging.DEBUG)  
     play_game()
