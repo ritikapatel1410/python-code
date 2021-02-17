@@ -9,7 +9,7 @@ import unittest
 import sys
 sys.path.insert(0, '/home/patidar/Desktop/pyunit-programs/main')
 from Binary_operation import Binary_operation
-class Test_sqrt(unittest.TestCase):
+class Test_Binary_operation(unittest.TestCase):
     def test_Binary_operation(self):
         self.assertEqual(Binary_operation(70),(100,False))
         self.assertEqual(Binary_operation(300),(4290,False))
