@@ -1,0 +1,58 @@
+{
+       "AddressBook": [
+              {
+                     "first_name": "Ritika",
+                     "last_name": "yadav",
+                     "address": "Bhilai",
+                     "city": "raipur",
+                     "state": "chatishgarh",
+                     "zip": "400665",
+                     "phone_number": "07200-290205"
+              },
+              {
+                     "first_name": "Vijay",
+                     "last_name": "Patidar",
+                     "address": "Bagli",
+                     "city": "Dewas",
+                     "state": "M.P.",
+                     "zip": "454663",
+                     "phone_number": "07295-290295"
+              },
+              {
+                     "first_name": "Ranjana",
+                     "last_name": "Dasai",
+                     "address": "hatpipliya",
+                     "city": "Dewas",
+                     "state": "M.P.",
+                     "zip": "454663",
+                     "phone_number": "07985-290295"
+              },
+              {
+                     "first_name": "Gopal",
+                     "last_name": "Patel",
+                     "address": "bilpank",
+                     "city": "ratlam",
+                     "state": "M.P.",
+                     "zip": "424663",
+                     "phone_number": "07295-298295"
+              },
+              {
+                     "first_name": "Gorav",
+                     "last_name": "Sharma",
+                     "address": "Sion Circle",
+                     "city": "Mumbai",
+                     "state": "Maharastra",
+                     "zip": "404663",
+                     "phone_number": "07595-218295"
+              },
+              {
+                     "first_name": "Dipali ",
+                     "last_name": "Verma",
+                     "address": "kamla nagar",
+                     "city": "Dehli",
+                     "state": "Dehli",
+                     "zip": "456111",
+                     "phone_number": "07261-289001"
+              }
+       ]
+}
