@@ -1,17 +1,17 @@
 {
        "AddressBook": [
               {
-                     "first_name": "Ritika",
+                     "first_name": "ritika",
                      "last_name": "yadav",
-                     "address": "Bhilai",
+                     "address": "bhilai",
                      "city": "raipur",
                      "state": "chattishgarh",
                      "zip": "400665",
                      "phone_number": "07200-290205"
               },
               {
-                     "first_name": "Vijay",
-                     "last_name": "Patidar",
+                     "first_name": "vijay",
+                     "last_name": "patidar",
                      "address": "kalyani nagar",
                      "city": "Dewas",
                      "state": "M.P.",
@@ -19,65 +19,65 @@
                      "phone_number": "07295-290295"
               },
               {
-                     "first_name": "Ranjana",
-                     "last_name": "Dasai",
+                     "first_name": "ranjana",
+                     "last_name": "dasai",
                      "address": "hatpipliya",
-                     "city": "Dewas",
-                     "state": "M.P.",
+                     "city": "dewas",
+                     "state": "m.p.",
                      "zip": "454663",
                      "phone_number": "07985-290295"
               },
               {
-                     "first_name": "Gorav",
-                     "last_name": "Sharma",
-                     "address": "Sion Circle",
-                     "city": "Mumbai",
-                     "state": "Maharastra",
+                     "first_name": "gorav",
+                     "last_name": "sharma",
+                     "address": "sion Circle",
+                     "city": "mumbai",
+                     "state": "maharastra",
                      "zip": "404663",
                      "phone_number": "07595-218295"
               },
               {
-                     "first_name": "Ritika",
+                     "first_name": "ritika",
                      "last_name": "yadav",
-                     "address": "Bhilai",
+                     "address": "bhilai",
                      "city": "raipur",
                      "state": "chatishgarh",
                      "zip": "400665",
                      "phone_number": "07200-290205"
               },
               {
-                     "first_name": "Vijay",
-                     "last_name": "Patidar",
-                     "address": "Bagli",
-                     "city": "Dewas",
+                     "first_name": "vijay",
+                     "last_name": "patidar",
+                     "address": "bagli",
+                     "city": "dewas",
                      "state": "M.P.",
                      "zip": "454663",
                      "phone_number": "07295-290295"
               },
               {
-                     "first_name": "Ranjana",
-                     "last_name": "Dasai",
+                     "first_name": "ranjana",
+                     "last_name": "dasai",
                      "address": "hatpipliya",
-                     "city": "Dewas",
-                     "state": "M.P.",
+                     "city": "dewas",
+                     "state": "m.p",
                      "zip": "454663",
                      "phone_number": "07985-290295"
               },
               {
-                     "first_name": "Gorav",
-                     "last_name": "Sharma",
-                     "address": "Sion Circle",
-                     "city": "Mumbai",
-                     "state": "Maharastra",
+                     "first_name": "gorav",
+                     "last_name": "sharma",
+                     "address": "sion Circle",
+                     "city": "mumbai",
+                     "state": "maharastra",
                      "zip": "404663",
                      "phone_number": "07595-218295"
               },
               {
-                     "first_name": "Dipali ",
-                     "last_name": "Verma",
+                     "first_name": "dipali ",
+                     "last_name": "verma",
                      "address": "kamla nagar",
-                     "city": "Dehli",
-                     "state": "Dehli",
+                     "city": "dehli",
+                     "state": "dehli",
                      "zip": "456111",
                      "phone_number": "07261-289001"
               },
@@ -85,19 +85,37 @@
                      "first_name": "sonu",
                      "last_name": "raghuwanshi",
                      "address": "indranagar",
-                     "city": "Bengaluru",
-                     "state": "Karnataka",
+                     "city": "bengaluru",
+                     "state": "karnataka",
                      "zip": "564321",
                      "phone_number": "671234-764234"
               },
               {
-                     "first_name": "Gopal",
-                     "last_name": "Patel",
+                     "first_name": "gopal",
+                     "last_name": "patel",
                      "address": "bilpank",
                      "city": "ratlam",
-                     "state": "M.P.",
+                     "state": "m.p.",
                      "zip": "424663",
-                     "phone_number": "07295-298295"
+                     "phone_number": "9800454334"
+              },
+              {
+                     "first_name": "ritika",
+                     "last_name": "patel",
+                     "address": "vijay nagar",
+                     "city": "indore",
+                     "state": "m.p.",
+                     "zip": "454665",
+                     "phone_number": "980034521"
+              },
+              {
+                     "first_name": "mahima",
+                     "last_name": "rashtogi",
+                     "address": "rajiv gandhi nagar",
+                     "city": "kota",
+                     "state": "rajasthan",
+                     "zip": "454422",
+                     "phone_number": "985431261"
               }
        ]
 }
