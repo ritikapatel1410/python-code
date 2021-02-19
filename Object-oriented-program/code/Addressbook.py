@@ -11,6 +11,12 @@ import json
 import logging
 import os
 
+
+#Create and configure logger 
+logging.basicConfig(filename="/home/patidar/logger.log",level=logging.DEBUG,format='%(levelname)s:%(filename)s:%(funcName)s:%(asctime)s:%(name)s:%(message)s') 
+#Creating an object 
+logger=logging.getLogger('__name__')
+
 #define a class
 class Address_Book:
     """
@@ -132,8 +138,10 @@ class Address_Book:
             data=self.read_jsonfile()
             add_detail=data["AddressBook"].append(contact_detail)
             self.write_jsonfile(data)
+            print("person information added")
             logging.debug("person information added")
         else:
+            print("person already exist")
             logging.debug("person already exist")
 
     def search_detail(self):
@@ -154,7 +162,8 @@ class Address_Book:
         sorted_lastname=sorted(data["AddressBook"],key=lambda x:x["last_name"])
         for find_contact in sorted_lastname:
             if find_contact[search_mode[mode]].lower()==search.lower():
-                logging.debug(tuple(find_contact.values()))
+                print(tuple(find_contact.values()))
+                logging.debug("search successfully")
                 contact_count+=1
         if contact_count==0:
             userchoice=str(input("do you want to add this contact press? y or n: "))
@@ -177,8 +186,10 @@ class Address_Book:
         data=self.read_jsonfile()
         if(person_exist==True):
             data["AddressBook"].remove(contact_detail)
-            logging.debug("{0} deleted".format(tuple(contact_detail.values())))
+            print("{0} deleted".format(tuple(contact_detail.values())))
+            logging.debug("delete successfully")
         else:
+            print("person information not found")
             logging.debug("person information not found")
         self.write_jsonfile(data)
 
@@ -200,16 +211,14 @@ class Address_Book:
             change=self.modify_detail().lower()
             value=str(input("enter new {0} : ".format(change)))
             data["AddressBook"][data["AddressBook"].index(contact_detail)][change]=value
-            logging.debug("{0} detatil updated".format(contact_detail.values()))
+            print("{0} detatil updated".format(contact_detail.values()))
+            logging.debug("contact updated")
             self.write_jsonfile(data)
         else:
+            print("contact detail not found")
             logging.debug("contact detail not found")
 
-if __name__ == "__main__":
-    #Create and configure logger 
-    logging.basicConfig(filename="/home/patidar/logger.log",level=logging.DEBUG,format='%(levelname)s:%(filename)s:%(funcName)s:%(asctime)s:%(name)s:%(message)s') 
-    #Creating an object 
-    logger=logging.getLogger('__name__')
+if __name__ == '__main__':
     AddressBookObj=Address_Book()
     try:
         AddressBookMode=int(input("enter mode of Address Book 0:search contact  1:add contact 2:del contact 3:update contact: "))
