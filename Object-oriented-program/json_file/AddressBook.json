@@ -73,22 +73,13 @@
                      "phone_number": "07595-218295"
               },
               {
-                     "first_name": "dipali ",
+                     "first_name": "dipali",
                      "last_name": "verma",
                      "address": "kamla nagar",
                      "city": "dehli",
                      "state": "dehli",
                      "zip": "456111",
-                     "phone_number": "07261-289001"
-              },
-              {
-                     "first_name": "sonu",
-                     "last_name": "raghuwanshi",
-                     "address": "indranagar",
-                     "city": "bengaluru",
-                     "state": "karnataka",
-                     "zip": "564321",
-                     "phone_number": "671234-764234"
+                     "phone_number": "987651234"
               },
               {
                      "first_name": "gopal",
@@ -116,6 +107,15 @@
                      "state": "rajasthan",
                      "zip": "454422",
                      "phone_number": "985431261"
+              },
+              {
+                     "first_name": "divya",
+                     "last_name": "chaturvedi",
+                     "address": "aashirwad calony",
+                     "city": "vidisha",
+                     "state": "m.p.",
+                     "zip": "564321",
+                     "phone_number": "9871235423"
               }
        ]
 }
