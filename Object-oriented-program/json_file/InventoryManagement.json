@@ -1,0 +1,38 @@
+{
+   "Rice": [
+      {
+         "name": "daawat",
+         "price": "125",
+         "weight": "16"
+      },
+      {
+         "name": "kohinoor",
+         "price": "100",
+         "weight": "12"
+      },
+      {
+         "name": "hanuman",
+         "price": "130",
+         "weight": "12"
+      }
+   ],
+   "Wheat": [
+      {
+         "name": "sujata",
+         "price": "60",
+         "weight": "19"
+      },
+      {
+         "name": "puna",
+         "price": "30",
+         "weight": 25.0
+      }
+   ],
+   "Pulse": [
+      {
+         "name": "tin ikka",
+         "price": "90",
+         "weight": 24.0
+      }
+   ]
+}
