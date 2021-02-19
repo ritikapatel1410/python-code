@@ -9,6 +9,7 @@
 import ast
 import json
 import logging
+import os
 
 #define a class
 class Address_Book:
@@ -32,7 +33,8 @@ class Address_Book:
         Return:
             data (List): Load data from read file
         """
-        with open("/home/patidar/Desktop/GitHub_code/Object-oriented-program/python-code/Object-oriented-program/json_file/AddressBook.json",'r') as jsonfile:
+        fileDir = os.path.abspath(__file__) 
+        with open(os.path.join(os.path.split(fileDir)[0], '../json_file/AddressBook.json'),'r') as jsonfile:
             data = json.load(jsonfile)
             jsonfile.close()
         return data
@@ -46,7 +48,8 @@ class Address_Book:
         Return:
             None
         """
-        with open("/home/patidar/Desktop/GitHub_code/Object-oriented-program/python-code/Object-oriented-program/json_file/AddressBook.json",'w') as jsonfile:
+        fileDir = os.path.abspath(__file__) 
+        with open(os.path.join(os.path.split(fileDir)[0], '../json_file/AddressBook.json'),'w') as jsonfile:
                 json.dump(data,jsonfile,indent=7)
                 jsonfile.close
 
