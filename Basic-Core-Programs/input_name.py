@@ -7,7 +7,7 @@
 '''
 import re
 def print_name():
-    user_name=input("enter the name: ")
+    user_name=str(input("enter the name: "))
     given_string="Hello <<UserName>>, How are you?"
     if(len(user_name)>=3 and (re.match("^[A-Za-z A-Za-z]*$", user_name)!=None)):
         new_string = re.sub("<<UserName>>", user_name, given_string)
