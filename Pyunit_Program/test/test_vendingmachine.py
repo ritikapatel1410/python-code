@@ -7,15 +7,14 @@
 '''
 import unittest
 import sys
-sys.path.insert(0, '/home/patidar/Desktop/pyunit-programs/main')
-import vending_machine
-
+sys.path.insert(0, '/home/patidar/Desktop/GitHub_code/Pyunit_Program/python-code/Pyunit_Program/main')
+from vending_machine import vending_machine
 
 class Test_vending_machine(unittest.TestCase):
     def test_VM(self):
         total_change=[1000,500,100,50,10,5,2,1]
         return_money=dict()
-        self.assertEqual(vending_machine.vending_machine(100,total_change,return_money),{100:1})
-        self.assertEqual(vending_machine.vending_machine(5300,total_change,return_money),{1000:5, 100:3})
+        self.assertEqual(vending_machine(100,total_change,return_money),{100:1})
+        self.assertEqual(vending_machine(5300,total_change,return_money),{1000:5, 100:3})
 if __name__ == '__main__':
     unittest.main()
