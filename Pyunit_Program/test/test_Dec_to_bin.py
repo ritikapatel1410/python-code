@@ -7,7 +7,7 @@
 '''
 import unittest
 import sys
-sys.path.insert(0, '/home/patidar/Desktop/pyunit-programs/main')
+sys.path.insert(0, '/home/patidar/Desktop/GitHub_code/Pyunit_Program/python-code/Pyunit_Program/main')
 import Dec_to_Bin
 
 class Test_Dec_to_Bin(unittest.TestCase):

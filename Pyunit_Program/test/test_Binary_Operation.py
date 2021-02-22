@@ -7,7 +7,7 @@
 '''
 import unittest
 import sys
-sys.path.insert(0, '/home/patidar/Desktop/pyunit-programs/main')
+sys.path.insert(0, '/home/patidar/Desktop/GitHub_code/Pyunit_Program/python-code/Pyunit_Program/main')
 from Binary_operation import Binary_operation
 class Test_Binary_operation(unittest.TestCase):
     def test_Binary_operation(self):
