@@ -4,3 +4,5 @@
 **/__pycache__/
 #ignore log file
 *.log
+#ignore __init__.py
+*__init__.py
