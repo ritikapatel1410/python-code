@@ -1,0 +1,58 @@
+{
+   "ibm": [
+      {
+         "stock_name": "ibm private ltd ",
+         "number_of_shares": "27",
+         "share_price": "123"
+      }
+   ],
+   "cipla": [
+      {
+         "stock_name": "cipla_ltd",
+         "number_of_shares": "7",
+         "share_price": "233"
+      }
+   ],
+   "sbi": [
+      {
+         "stock_name": "sbi",
+         "number_of_shares": "15",
+         "share_price": "110"
+      }
+   ],
+   "granules": [
+      {
+         "stock_name": "granules_india_ltd",
+         "number_of_shares": "12",
+         "share_price": "150"
+      }
+   ],
+   "cisco": [
+      {
+         "stock_name": "cisco pvt ltd",
+         "number_of_shares": "123",
+         "share_price": "135"
+      }
+   ],
+   "samsang": [
+      {
+         "stock_name": "samsang pvt ltd",
+         "number_of_shares": "123",
+         "share_price": "134"
+      }
+   ],
+   "microsoft": [
+      {
+         "stock_name": "microsoft",
+         "number_of_shares": "120",
+         "share_price": "134"
+      }
+   ],
+   "havells": [
+      {
+         "stock_name": "havells pvt. ltd.",
+         "number_of_shares": "123",
+         "share_price": "135"
+      }
+   ]
+}

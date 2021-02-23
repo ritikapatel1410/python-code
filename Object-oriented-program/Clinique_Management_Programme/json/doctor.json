@@ -1,0 +1,26 @@
+[
+    {
+        "name": "dipali",
+        "id": "1139",
+        "specialization": "orthopedic",
+        "availability": "am"
+    },
+    {
+        "name": "gourav",
+        "id": "1195",
+        "specialization": "pediatrician",
+        "availability": "am & pm"
+    },
+    {
+        "name": "aastha",
+        "id": "2068",
+        "specialization": "gynaecologist",
+        "availability": "pm"
+    },
+    {
+        "name": "vijay",
+        "id": "2168",
+        "specialization": "gynaecologist",
+        "availability": "am & pm"
+    }
+]
