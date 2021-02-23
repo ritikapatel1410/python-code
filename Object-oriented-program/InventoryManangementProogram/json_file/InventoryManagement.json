@@ -1,0 +1,63 @@
+{
+   "Rice": [
+      {
+         "name": "daawat",
+         "price": "125",
+         "weight": "16"
+      },
+      {
+         "name": "kohinoor",
+         "price": "120",
+         "weight": "197.0"
+      },
+      {
+         "name": "hanuman",
+         "price": "130",
+         "weight": "12"
+      },
+      {
+         "name": "india gate",
+         "price": "140",
+         "weight": "10"
+      },
+      {
+         "name": "kohinoor",
+         "price": "140",
+         "weight": "20"
+      }
+   ],
+   "Wheat": [
+      {
+         "name": "sujata",
+         "price": "60",
+         "weight": "14.0"
+      },
+      {
+         "name": "puna",
+         "price": "30",
+         "weight": "25"
+      },
+      {
+         "name": "lokwan",
+         "price": "10",
+         "weight": "40"
+      }
+   ],
+   "Pulse": [
+      {
+         "name": "tin ikka",
+         "price": "92",
+         "weight": "22.0"
+      },
+      {
+         "name": "fortune moong daal",
+         "price": "132",
+         "weight": "19"
+      },
+      {
+         "name": "aashirwad",
+         "price": "100",
+         "weight": "14"
+      }
+   ]
+}
