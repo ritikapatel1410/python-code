@@ -7,7 +7,7 @@
 '''
 import os
 import sys
-sys.path.insert(0, os.path.abspath('Clinique_Management_Programme/LogFile'))
+sys.path.insert(0, os.path.abspath('LogFile'))
 import loggerfile
 import json_operation
 import re
@@ -95,7 +95,7 @@ def user_input(return_input):
     while True:
         if(return_input=="doctor_search"):
             try:
-                search_mode=int(input("enter \n 0 : doctor name \n 1 : doctor id \n 2 : doctor availability : \n 3 : specialziation: "))
+                search_mode=int(input("enter \n 0 : doctor name \n 1 : doctor id \n 2 : doctor availability : \n 3 : specialziation \n 4 : Quit() : "))
                 if(search_mode==0 ):
                     name=str(input("enter doctor name: ")).lower()
                     if(re.match("^[A-Za-z A-Za-z]*$",name)):
@@ -120,6 +120,8 @@ def user_input(return_input):
                         return "specialization",specialization
                     else:
                         print("invalid availability")
+                elif(search_mode==4):
+                    sys.exit()
             except ValueError as error:
                 loggerfile.Logger("error","invalid mode entered")
 
