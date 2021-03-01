@@ -9,7 +9,7 @@ import os
 import sys
 import unittest
 from unittest.mock import patch
-sys.path.insert(0, os.path.abspath('./test/../code'))
+sys.path.insert(0, os.path.abspath('code/main'))
 from InventoryManagementProgram import InventoryManagement
 
 class InventoryManagementTestCase(unittest.TestCase):
