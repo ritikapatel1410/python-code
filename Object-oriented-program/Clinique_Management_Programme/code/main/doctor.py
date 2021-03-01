@@ -47,6 +47,7 @@ class doctor_management:
             return (False,0) 
     
     def take_appointment(self,name):
+        check_appointment=False
         if(name in [name_list["name"] for name_list in self.data_doctor]):
             if(name in self.data_appointent["appointment"][0].keys()):
                 if(int(self.data_appointent["appointment"][0][name])<5):
@@ -56,7 +57,9 @@ class doctor_management:
                     json_operation.upload_data_appoitment(self.data_appointent)
                     print("appointment fixed")
                     loggerfile.Logger("debug","take appointment successfully")
+                    check_appointment=True
                 else:
+                    check_appointment=False
                     self.data_appointent["search_name"][0][name]=str(int(self.data_appointent["search_name"][0][name])+1)
                     json_operation.upload_data_appoitment(self.data_appointent)
                     print("today not possible try for next day")
@@ -67,8 +70,10 @@ class doctor_management:
                 self.data_appointent["search_name"][0][name]=str(1)
                 json_operation.upload_data_appoitment(self.data_appointent)
                 loggerfile.Logger("debug","take appointment successfully")
+                check_appointment=True
         else:
             print("this doctor not available")
+        return check_appointment
 
     def popular_doctor(self):
         sorted_doctor={key: value for key, value in sorted(self.data_appointent["search_name"][0].items(), key=lambda item:int(item[1]))}
@@ -90,7 +95,7 @@ class doctor_management:
         print("========================= Doctor Appointment Detail Here =============================")
         for doctor,appointment in self.data_appointent["appointment"][0].items():
             print("doctor {0} have {1} appointment".format(doctor,appointment))
-
+        return True
 def user_input(return_input):
     while True:
         if(return_input=="doctor_search"):
