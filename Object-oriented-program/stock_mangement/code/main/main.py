@@ -13,7 +13,7 @@ import re
 import StockManagement
 import stockMangement_portfolio
 import json_operation
-sys.path.insert(0, os.path.abspath('../../LogFile'))
+sys.path.insert(0, os.path.abspath('code/LogFile'))
 import loggerfile 
 
 def main():
