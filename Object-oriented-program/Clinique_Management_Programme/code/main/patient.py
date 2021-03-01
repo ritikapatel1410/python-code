@@ -7,7 +7,7 @@
 '''
 import os
 import sys
-sys.path.insert(0, os.path.abspath('./LogFile'))
+sys.path.insert(0, os.path.abspath('LogFile'))
 import loggerfile
 import json_operation
 import re
@@ -32,7 +32,7 @@ class patient_management:
 def user_search():
     while True:
         try:
-            search_mode=int(input("enter \n 0 : name \n 1 : id \n 2 : mobile number:  "))
+            search_mode=int(input("enter \n 0 : name \n 1 : id \n 2 : mobile number \n 3 : Quit() : "))
             if(search_mode==0):
                 name=str(input("enter patient name: ")).lower()
                 if(re.match("^[A-Za-z A-Za-z]*$",name)):
@@ -49,6 +49,7 @@ def user_search():
                 mobile_number=str(input("enter patient mobile number: ")).lower()
                 if(re.match(r'^[7-9]{1}[0-9]{9}$',mobile_number)):
                     return "phone_number",mobile_number
-
+            elif(search_mode==3):
+                sys.exit()
         except ValueError as error:
             loggerfile.Logger("error","invalid mode entered")

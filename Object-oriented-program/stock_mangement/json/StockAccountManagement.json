@@ -54,5 +54,12 @@
          "number_of_shares": "123",
          "share_price": "135"
       }
+   ],
+   "tcs": [
+      {
+         "stock_name": "tcs pvt. ltd.",
+         "number_of_shares": "123",
+         "share_price": "139"
+      }
    ]
 }
