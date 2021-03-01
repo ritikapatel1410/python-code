@@ -180,7 +180,7 @@ def load_data():
         Return:
             data (dict) : load data of json file
     """
-    with open(os.path.join(os.path.split(os.path.abspath(__file__) )[0], '../json_file/InventoryManagement.json'),'r') as jsonfile:
+    with open(os.path.abspath('json_file/InventoryManagement.json'),'r') as jsonfile:
         data = json.load(jsonfile)
         jsonfile.close()
     return data
@@ -194,7 +194,7 @@ def upload_data(data):
         Return:
             None
     """
-    with open(os.path.join(os.path.split(os.path.abspath(__file__) )[0], '../json_file/InventoryManagement.json'),'w') as jsonfile:
+    with open(os.path.abspath('json_file/InventoryManagement.json'),'w') as jsonfile:
         json.dump(data,jsonfile,indent=3)
         jsonfile.close()
 
@@ -209,7 +209,7 @@ def main():
     """
     ObjInventoryManagement=InventoryManagement()
     try:
-        InventoryManagementMode=int(input("enter mode of Inventory Management Mode \n 0:add stock \n 1:update stock \n 2:search stock \n 3:calcutate_inventory"))
+        InventoryManagementMode=int(input("enter mode of Inventory Management Mode \n 0:add stock \n 1:update stock \n 2:search stock \n 3:calcutate_inventory \n 4:quit()"))
         if(InventoryManagementMode==0):
             item,name=input_fuction("stock_exist")
             if(ObjInventoryManagement.StockExist(item,name)==False):
@@ -263,6 +263,8 @@ def main():
                     print("##### total #####")
                     print("total:{0}".format(sum(total)))
                     break
+        elif(InventoryManagementMode==3):
+            sys.exit()
         else:
             loggerfile.Logger(logging.DEBUG,"invalid mode of Inventory Management")
     except ValueError as error:

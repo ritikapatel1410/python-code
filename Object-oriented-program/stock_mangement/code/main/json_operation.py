@@ -11,7 +11,7 @@ def load_data():
         Return:
             data (dict) : load data of json file
     """
-    with open(os.path.join(os.path.split(os.path.abspath(__file__) )[0], 'StockAccountManagement.json'),'r') as jsonfile:
+    with open(os.path.abspath('json/StockAccountManagement.json'),'r') as jsonfile:
         data = json.load(jsonfile)
         jsonfile.close()
     return data
@@ -25,6 +25,6 @@ def upload_data(data):
         Return:
             None
     """
-    with open(os.path.join(os.path.split(os.path.abspath(__file__) )[0], 'StockAccountManagement.json'),'w') as jsonfile:
+    with open(os.path.abspath( 'json/StockAccountManagement.json'),'w') as jsonfile:
         json.dump(data,jsonfile,indent=3)
         jsonfile.close()

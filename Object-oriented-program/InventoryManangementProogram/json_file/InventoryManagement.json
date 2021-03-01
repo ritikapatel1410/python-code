@@ -24,6 +24,16 @@
          "name": "kohinoor",
          "price": "140",
          "weight": "20"
+      },
+      {
+         "name": "kashmiri rice",
+         "price": "100",
+         "weight": "12"
+      },
+      {
+         "name": "kohinoor",
+         "price": "140",
+         "weight": "20"
       }
    ],
    "Wheat": [

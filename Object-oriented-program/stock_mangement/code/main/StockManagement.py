@@ -11,7 +11,7 @@ import sys
 import json
 import re
 import json_operation
-sys.path.insert(0, os.path.abspath('../../LogFile'))
+sys.path.insert(0, os.path.abspath('LogFile'))
 import loggerfile 
 
 class create_stock:
