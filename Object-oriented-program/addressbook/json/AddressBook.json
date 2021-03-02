@@ -1,15 +1,6 @@
 {
        "AddressBook": [
               {
-                     "first_name": "ritika",
-                     "last_name": "yadav",
-                     "address": "bhilai",
-                     "city": "raipur",
-                     "state": "chattishgarh",
-                     "zip": "400665",
-                     "phone_number": "07200-290205"
-              },
-              {
                      "first_name": "vijay",
                      "last_name": "patidar",
                      "address": "kalyani nagar",
@@ -91,7 +82,7 @@
                      "phone_number": "9800454334"
               },
               {
-                     "first_name": "ritika",
+                     "first_name": "/usr/bin/python3.8 /home/patidar/Downloads/addressbook/test/test_AddressBook.py",
                      "last_name": "patel",
                      "address": "vijay nagar",
                      "city": "indore",
@@ -116,6 +107,24 @@
                      "state": "m.p.",
                      "zip": "564321",
                      "phone_number": "9871235423"
+              },
+              {
+                     "first_name": "madhuri",
+                     "last_name": "sharma",
+                     "address": "rajendra nagar",
+                     "city": "indore",
+                     "state": "m.p.",
+                     "zip": "440321",
+                     "phone_number": "9812356711"
+              },
+              {
+                     "first_name": "ritu",
+                     "last_name": "patel",
+                     "address": "sanghvi nagar",
+                     "city": "vidisha",
+                     "state": "m.p.",
+                     "zip": "450044",
+                     "phone_number": "9002306541"
               }
        ]
 }
